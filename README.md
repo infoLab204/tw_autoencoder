@@ -1,4 +1,4 @@
-![image](https://github.com/infoLab204/tw_autoencoder/assets/63629577/8de60209-108b-4659-a94c-ec59f074d467)# tw_autoencoder: A tied-weight autoencoder for the linear dimensionality reduction of sample data with Python and R
+# tw_autoencoder: A tied-weight autoencoder for the linear dimensionality reduction of sample data with Python and R
 
 Sunhee Kim, Chang-Yong Lee
 
