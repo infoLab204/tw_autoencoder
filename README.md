@@ -1,4 +1,4 @@
-# tw_autoencoder: A tied-weight autoencoder for the linear dimensionality reduction of sample data with Python and R
+![image](https://github.com/infoLab204/tw_autoencoder/assets/63629577/8de60209-108b-4659-a94c-ec59f074d467)# tw_autoencoder: A tied-weight autoencoder for the linear dimensionality reduction of sample data with Python and R
 
 Sunhee Kim, Chang-Yong Lee
 
@@ -14,10 +14,10 @@ We proposed a restorable autoencoder model as a non-linear method for reducing d
 * __Python__: tensorflow (version 2.2 or later), keras, numpy, matplotlib, scikit-learn
 
 ## Data sets
-1. The original data of the four species
-    * MNIST :  in the installed R-packages tensorflow
-    * FMNIST : in the installed R-packages tensorflow
-    * CIRAR10: in the installed R-packages tensorflow
+1. Data acquisition
+    * MNIST :  in the installed tensorflow
+    * FMNIST : in the installed tensorflow
+    * CIRAR10: in the installed tensorflow
     * SVHN : http://ufldl.stanford.edu/housenumbers/
     * Format 2: Cropped Digits: train_32x32.mat, test_32x32.mat
  
