@@ -27,7 +27,7 @@ Copy the following Python and R scripts from its GitHub repository
     * __load_data.py__  : loading data set, such as MNIST, Fashion-MNIST, SVHN and CIRAR10    
     * __stacked.py__ : learning stacked autoencoder model    
     * __tw_proposed.py__ : learning proposed autoencoder model    
-    * __split.py__ : store loss function according to the class label    
+    * __split.py__ : store function according to the class label    
     * __recon.py__ : image reconstruction of each model    
 * R scripts   
     * __pca.R__ : dimensionality reduction with pricipal component analysis    
@@ -36,13 +36,13 @@ Copy the following Python and R scripts from its GitHub repository
     * __classification.R__ : performing classification analysis in terms of support vector machine    
 
 ## Scipts tutorial
-* Loading data sets    
+* Loading data set    
     To loading data set, run load_data.py with following parameters.
   ```
-       python load_data.py type
+    python load_data.py type
   ```
   * type : data set, select data set from MNIST, FMNIST, SVHN or CIFAR10
-  * output  : loading 10,000 data MNIST, FMNIST, SHVN and CIFAR10 data set and their labels 
+  * output  : result of storing MNIST, FMNIST, SHVN, or CIFAR10 datasets and their labels in 10,000 parts
     
   ```
    (eg) python load_data.py MNIST
