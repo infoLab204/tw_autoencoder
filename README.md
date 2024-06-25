@@ -105,12 +105,12 @@ Copy the following Python and R scripts from its GitHub repository
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(eg) MNIST_ICA_code_4.csv  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MNIST_ICA_out_4.csv  
 
-* Reconstructing input images
-    To reconstruct input images, simply run recon.py with 
+* Reconstructing input images    
+    To reconstruct input images, simply run recon.py with MNIST, FMNIST, SVHN and CIFAR-10 as input data sets.    
   ```
        python recon.py type img_idx
   ```
-  * type : datatype, select data set from MNIST, FMNIST, SVHN or CIFAR10
+  * type : datatype, select data set from MNIST, FMNIST, SVHN or CIFAR-10
   * img_idx : select image index
   * output  : reconstructed images
  
@@ -121,7 +121,7 @@ Copy the following Python and R scripts from its GitHub repository
 (eg) MNIST_total_loss.csv  
      MNIST_code.csv   
      
-* Store loss function according to the class labels
+* Store loss function according to the class labels    
     To get loss function for each class, run split.py with data set and their class labels. Ouput will be loss functions of data set for each class label.
   ```
        python split.py type 
@@ -139,8 +139,8 @@ Copy the following Python and R scripts from its GitHub repository
 
 
 
-* Evaluating the loss function for the proposed model, SAE, PCA and ICA
-    To evaluate the loss function for all models, simply run loss.R with the values of units in the output lapyer of each model.
+* Evaluating the loss function for the proposed model, SAE, PCA and ICA    
+    To evaluate the loss function for all models, simply run loss.R with the values of units in the output lapyer of each model.    
     Ouput will be the loss function of all models.
   ```
        Rscipt loss.R type code_size
