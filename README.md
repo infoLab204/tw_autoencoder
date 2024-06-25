@@ -38,7 +38,127 @@ copy the following Python and R scripts from its GitHub repository
 
 ### Scipts tutorial
 * Loading data sets    
-    To load data set, run load_data.py with following parameters.    
-       python load_data.py type    
-  * type : datatype, either "MNIST" for MNIST pr "FMNIST" for Fashion-MNIST
+    To loading data set, run load_data.py with following parameters.
+  ```
+       python load_data.py type
+  ```
+  * type : datatype, select data set from MNIST, FMNIST, SHVN or CIFAR10
+  * output  : MNIST, FMNIST, SHVN and CIFAR10 data set and their labels
+ 
+    
+  ```
+   (eg) python load_data.py MNIST
+  ```
+(eg) MNIST_X_data_CV1.csv : data set of MNIST   
+     MNIST_Y_label_CV1.csv : label of data set of MNIST
 
+     
+* Learing autoencoder models
+    To learn the autoencoder models, run stacked.py and proposed.py . The scripts will evaluate the units in the putput layer. Outputs of the models will be the values of units in the output layer.
+  ```
+       python proposed.py type
+  ```
+  * type : datatype, select data set from MNIST, FMNIST, SHVN or CIFAR10
+  * output  : mean squred error and values of units in the code and output layers.
+ 
+    
+  ```
+   (eg) python proposed.py MNIST
+  ```
+(eg) MNIST_total_loss.csv  
+     MNIST_code.csv 
+     
+* Reconstructing input images
+    To reconstruct input images, simply run recon.py with 
+  ```
+       python recon.py type img_idx
+  ```
+  * type : datatype, select data set from MNIST, FMNIST, SHVN or CIFAR10
+  * img_idx : select image index
+  * output  : reconstructed images
+ 
+    
+  ```
+   (eg)  python recon.py MNIST 20
+  ```
+(eg) MNIST_total_loss.csv  
+     MNIST_code.csv   
+     
+* Store loss function according to the class labels
+    To get loss function for each class, run split.py with data set and their class labels. Ouput will be loss functions of data set for each class label.
+  ```
+       python split.py type 
+  ```
+  * type : datatype, select data set from MNIST, FMNIST, SHVN or CIFAR10
+  * output  : values of units in the output layer
+ 
+    
+  ```
+   (eg)  python  split.py  MNIST 
+  ```
+(eg) MNIST_loss_class.csv and MNIST_out class.csv, for each class label
+
+* Performing PCA for hte dimensionality redction
+    To reduce the dimensionality with PCA, simply run PCA.R with MNIST, FMNIST, SHVN and CIAR10 as input data sets.
+    Output will be the dimensionality-reduced codes.
+  ```
+       Rscipt pca.R type code_size
+  ```
+  * type : datatype, select data set from MNIST, FMNIST, SHVN or CIFAR10
+  * code : number of nodes in the code layer
+  * output  : values of units in the output layer
+ 
+    
+  ```
+   (eg)   Rscipt pca.R type 4
+  ```
+(eg) MNIST_loss_class.csv and MNIST_out class.csv, for each class label
+
+* Performing ICA for hte dimensionality redction 
+    To reduce the dimensionality with ICA, simply run PCA.R with MNIST, FMNIST, SHVN and CIAR10 as input data sets.
+    Output will be the dimensionality-reduced codes.
+  ```
+       Rscipt ica.R type code_size
+  ```
+  * type : datatype, select data set from MNIST, FMNIST, SHVN or CIFAR10
+  * code : number of nodes in the code layer
+  * output  : values of units in the output layer
+ 
+    
+  ```
+   (eg)   Rscipt ica.R type 4
+  ```
+(eg) MNIST_loss_class.csv and MNIST_out class.csv, for each class label
+
+* Evaluating the loss function for the proposed model, SAE, PCA and ICA
+    To evaluate the loss function for all models, simply run loss.R with the values of units in the output lapyer of each model.
+    Ouput will be the loss function of all models.
+  ```
+       Rscipt loss.R type code_size
+  ```
+  * type : datatype, select data set from MNIST, FMNIST, SHVN or CIFAR10
+  * code : number of nodes in the code layer
+  * output  : values of units in the output layer of each class label
+ 
+    
+  ```
+   (eg)   Rscipt loss.R MNIST 4
+  ```
+(eg) MNIST_loss_class.csv and MNIST_out class.csv, for each class label
+
+* Performing classification analysis using support vector machine
+    To classify data set, sum classification.R with the codes of all models as the input data.
+    Ouput will be the classification results
+  ```
+       Rscipt classification.R type code_size
+  ```
+  * type : datatype, select data set from MNIST, FMNIST, SHVN or CIFAR10
+  * code : number of nodes in the code layer
+  * output  : values of units in the output layer of each class label
+ 
+    
+  ```
+   (eg)   Rscipt loss.R MNIST 4
+  ```
+(eg) MNIST_loss_class.csv and MNIST_out class.csv, for each class label
+ 
