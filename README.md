@@ -54,7 +54,7 @@ Copy the following Python and R scripts from its GitHub repository
 * Learning autoencoder models    
     To learn the autoencoder models, run stacked.py and proposed.py . The scripts will evaluate the units in the output layer. 
   ```
-    python proposed.py type input code
+    python tw_proposed.py type input code
   ```
   * type : data set, select data set from MNIST, FMNIST, SVHN or CIFAR-10
   * input : data set
@@ -63,11 +63,12 @@ Copy the following Python and R scripts from its GitHub repository
  
     
   ```
-    (eg) python proposed.py MNIST  MNIST_X_data_CV1.csv 4
+    (eg) python tw_proposed.py MNIST  MNIST_X_data_CV1.csv 4
   ```
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(eg) MNIST_loss_4.csv  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MNIST_code_4.csv 
-     
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MNIST_out_4.csv 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(note) In a similar manner, learn stacked.py     
 * Reconstructing input images
     To reconstruct input images, simply run recon.py with 
   ```
