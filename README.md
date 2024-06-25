@@ -24,7 +24,7 @@ The dataset used are MNIST, Fashion-MNIST, SVHN and CIFAR-10. They are available
 ## Loading the scripts 
 Copy the following Python and R scripts from its GitHub repository
 * Python scripts     
-    * __load_data.py__  : loading data set, such as MNIST, Fashion-MNIST, SVHN and CIRAR-10    
+    * __load_data.py__  : loading data set, such as MNIST, Fashion-MNIST, SVHN and CIFAR-10    
     * __stacked.py__ : learning stacked autoencoder model    
     * __tw_proposed.py__ : learning proposed autoencoder model    
     * __split.py__ : store function according to the class label    
@@ -88,7 +88,7 @@ Copy the following Python and R scripts from its GitHub repository
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MNIST_PCA_out_4.csv  
 
 * Performing ICA for hte dimensionality reduction     
-    To reduce the dimensionality with ICA, simply run PCA.R with MNIST, FMNIST, SVHN and CIAR-10 as input data sets.    
+    To reduce the dimensionality with ICA, simply run PCA.R with MNIST, FMNIST, SVHN and CIFAR-10 as input data sets.    
     Output will be the dimensionality-reduced codes and output layer.
   ```
        Rscipt ica.R type input_data_set code_size
@@ -126,7 +126,7 @@ Copy the following Python and R scripts from its GitHub repository
   ```
        python split.py type 
   ```
-  * type : datatype, select data set from MNIST, FMNIST, SVHN or CIFAR10
+  * type : datatype, select data set from MNIST, FMNIST, SVHN or CIFAR-10
   * output  : values of units in the output layer
  
     
