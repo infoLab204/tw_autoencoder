@@ -42,7 +42,7 @@ copy the following Python and R scripts from its GitHub repository
   ```
        python load_data.py type
   ```
-  * type : data set, select data set from MNIST, FMNIST, SHVN or CIFAR10
+  * type : data set, select data set from MNIST, FMNIST, SVHN or CIFAR10
   * output  : loading 10,000 data MNIST, FMNIST, SHVN and CIFAR10 data set and their labels 
     
   ```
@@ -57,7 +57,7 @@ copy the following Python and R scripts from its GitHub repository
   ```
        python proposed.py type
   ```
-  * type : datatype, select data set from MNIST, FMNIST, SHVN or CIFAR10
+  * type : datatype, select data set from MNIST, FMNIST, SVHN or CIFAR10
   * output  : mean squred error and values of units in the code and output layers.
  
     
@@ -72,7 +72,7 @@ copy the following Python and R scripts from its GitHub repository
   ```
        python recon.py type img_idx
   ```
-  * type : datatype, select data set from MNIST, FMNIST, SHVN or CIFAR10
+  * type : datatype, select data set from MNIST, FMNIST, SVHN or CIFAR10
   * img_idx : select image index
   * output  : reconstructed images
  
@@ -88,7 +88,7 @@ copy the following Python and R scripts from its GitHub repository
   ```
        python split.py type 
   ```
-  * type : datatype, select data set from MNIST, FMNIST, SHVN or CIFAR10
+  * type : datatype, select data set from MNIST, FMNIST, SVHN or CIFAR10
   * output  : values of units in the output layer
  
     
@@ -98,12 +98,12 @@ copy the following Python and R scripts from its GitHub repository
 (eg) MNIST_loss_class.csv and MNIST_out class.csv, for each class label
 
 * Performing PCA for hte dimensionality redction
-    To reduce the dimensionality with PCA, simply run PCA.R with MNIST, FMNIST, SHVN and CIAR10 as input data sets.
+    To reduce the dimensionality with PCA, simply run PCA.R with MNIST, FMNIST, SVHN and CIAR10 as input data sets.
     Output will be the dimensionality-reduced codes.
   ```
        Rscipt pca.R type code_size
   ```
-  * type : datatype, select data set from MNIST, FMNIST, SHVN or CIFAR10
+  * type : datatype, select data set from MNIST, FMNIST, SVHN or CIFAR10
   * code : number of nodes in the code layer
   * output  : values of units in the output layer
  
@@ -114,12 +114,12 @@ copy the following Python and R scripts from its GitHub repository
 (eg) MNIST_loss_class.csv and MNIST_out class.csv, for each class label
 
 * Performing ICA for hte dimensionality redction 
-    To reduce the dimensionality with ICA, simply run PCA.R with MNIST, FMNIST, SHVN and CIAR10 as input data sets.
+    To reduce the dimensionality with ICA, simply run PCA.R with MNIST, FMNIST, SVHN and CIAR10 as input data sets.
     Output will be the dimensionality-reduced codes.
   ```
        Rscipt ica.R type code_size
   ```
-  * type : datatype, select data set from MNIST, FMNIST, SHVN or CIFAR10
+  * type : datatype, select data set from MNIST, FMNIST, SVHN or CIFAR10
   * code : number of nodes in the code layer
   * output  : values of units in the output layer
  
@@ -135,7 +135,7 @@ copy the following Python and R scripts from its GitHub repository
   ```
        Rscipt loss.R type code_size
   ```
-  * type : datatype, select data set from MNIST, FMNIST, SHVN or CIFAR10
+  * type : datatype, select data set from MNIST, FMNIST, SVHN or CIFAR10
   * code : number of nodes in the code layer
   * output  : values of units in the output layer of each class label
  
@@ -151,7 +151,7 @@ copy the following Python and R scripts from its GitHub repository
   ```
        Rscipt classification.R type code_size
   ```
-  * type : datatype, select data set from MNIST, FMNIST, SHVN or CIFAR10
+  * type : datatype, select data set from MNIST, FMNIST, SVHNor CIFAR10
   * code : number of nodes in the code layer
   * output  : values of units in the output layer of each class label
  
