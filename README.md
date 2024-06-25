@@ -70,7 +70,7 @@ Copy the following Python and R scripts from its GitHub repository
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(note) In a similar manner, run stacked.py    
 <br>
 * Performing PCA for hte dimensionality reduction    
-    To reduce the dimensionality with PCA, simply run PCA.R with MNIST, FMNIST, SVHN and CIAR-10 as input data sets.   
+    To reduce the dimensionality with PCA, simply run PCA.R with MNIST, FMNIST, SVHN and CIFAR-10 as input data sets.   
     Output will be the dimensionality-reduced codes and output layer.
   ```
     Rscipt pca.R type input_data_set code_size
