@@ -108,9 +108,10 @@ Copy the following Python and R scripts from its GitHub repository
 * Reconstructing input images    
     To reconstruct input images, simply run recon.py with MNIST, FMNIST, SVHN and CIFAR-10 as input data sets.    
   ```
-       python recon.py type img_idx
+       python recon.py type code img_idx
   ```
   * type : datatype, select data set from MNIST, FMNIST, SVHN or CIFAR-10
+  * code : number of nodes in the code layer
   * img_idx : select image index
   * output  : reconstructed images
  
@@ -118,56 +119,61 @@ Copy the following Python and R scripts from its GitHub repository
   ```
    (eg)  python recon.py MNIST 20
   ```
-(eg) MNIST_total_loss.csv  
-     MNIST_code.csv   
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(eg) MNIST_image_recon_4_20.png  
      
 * Store loss function according to the class labels    
     To get loss function for each class, run split.py with data set and their class labels. Ouput will be loss functions of data set for each class label.
   ```
-       python split.py type 
+       python split.py type X_data Y_label code
   ```
   * type : datatype, select data set from MNIST, FMNIST, SVHN or CIFAR-10
+  * X_data : data set
+  * Y_data : label data set
+  * code : number of nodes in the code layer
   * output  : values of units in the output layer
  
     
   ```
    (eg)  python  split.py  MNIST 
   ```
-(eg) MNIST_loss_class.csv and MNIST_out class.csv, for each class label
-
-
-
-
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(eg) MNIST_LAE_4_class0.csv for each class label
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MNIST_SAE_4_class0.csv for each class label
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MNIST_PCA_4_class0.csv for each class label
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MNIST_ICA_4_class0.csv for each class label
 
 * Evaluating the loss function for the proposed model, SAE, PCA and ICA    
     To evaluate the loss function for all models, simply run loss.R with the values of units in the output lapyer of each model.    
     Ouput will be the loss function of all models.
   ```
-       Rscipt loss.R type code_size
+       Rscipt loss.R type X_data code_size
   ```
-  * type : datatype, select data set from MNIST, FMNIST, SVHN or CIFAR10
+  * type : datatype, select data set from MNIST, FMNIST, SVHN or CIFAR-10
+  * X_data : input data set
   * code : number of nodes in the code layer
   * output  : values of units in the output layer of each class label
  
     
   ```
-   (eg)   Rscipt loss.R MNIST 4
+   (eg)   Rscipt loss.R MNIST MNIST_X_data_CV1.csv 4
   ```
-(eg) MNIST_loss_class.csv and MNIST_out class.csv, for each class label
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(eg) MNIST_total_loss_4.csv 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MNIST_total_class_loss_4.csv
 
 * Performing classification analysis using support vector machine
-    To classify data set, sum classification.R with the codes of all models as the input data.
+    To classify data set, run classification.R with the codes of all models as the input data.
     Ouput will be the classification results
   ```
-       Rscipt classification.R type code_size
+       Rscipt classification.R type X_data, Y_label code_size
   ```
-  * type : datatype, select data set from MNIST, FMNIST, SVHNor CIFAR10
+  * type : datatype, select data set from MNIST, FMNIST, SVHN or CIFAR-10
+  * X_data : data set
+  * Y_data : label data set
   * code : number of nodes in the code layer
   * output  : values of units in the output layer of each class label
  
     
   ```
-   (eg)   Rscipt loss.R MNIST 4
+   (eg)   Rscipt  classification.R MNIST MNIST_X_data_CV1.csv MNIST_Y_label_CV1.csv 4
   ```
-(eg) MNIST_loss_class.csv and MNIST_out class.csv, for each class label
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(eg) MNIST_classification_4.csv 
  
