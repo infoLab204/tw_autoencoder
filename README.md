@@ -27,7 +27,7 @@ copy the following Python and R scripts from its GitHub repository
 * Python scripts     
     * __load_data.py__  : loading data set, such as MNIST, Fashion-MNIST, SVHN and CIRAR10    
     * __stacked.py__ : learning stacked autoencoder model    
-    * __proposed.py__ : learning proposed autoencoder model    
+    * __tw_proposed.py__ : learning proposed autoencoder model    
     * __split.py__ : store loss function according to the class label    
     * __recon.py__ : image reconstruction of each model    
 * R scripts   
