@@ -47,8 +47,8 @@ Copy the following Python and R scripts from its GitHub repository
   ```
    (eg) python load_data.py MNIST
   ```
-(eg) MNIST_X_data.csv : data set of MNIST   
-     MNIST_Y_label.csv : label of data set of MNIST
+(eg) MNIST_X_data_CV.csv : data set of MNIST   
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MNIST_Y_label_CV.csv : label of data set of MNIST
 
      
 * Learing autoencoder models
