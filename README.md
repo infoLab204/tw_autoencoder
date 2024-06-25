@@ -51,20 +51,22 @@ Copy the following Python and R scripts from its GitHub repository
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MNIST_Y_label_CV1.csv : label of data set of MNIST
 
      
-* Learing autoencoder models
-    To learn the autoencoder models, run stacked.py and proposed.py . The scripts will evaluate the units in the putput layer. Outputs of the models will be the values of units in the output layer.
+* Learning autoencoder models    
+    To learn the autoencoder models, run stacked.py and proposed.py . The scripts will evaluate the units in the output layer. 
   ```
-       python proposed.py type
+    python proposed.py type input code
   ```
-  * type : datatype, select data set from MNIST, FMNIST, SVHN or CIFAR10
+  * type : data set, select data set from MNIST, FMNIST, SVHN or CIFAR-10
+  * input : data set
+  * code : number of nodes in the code layer
   * output  : mean squred error and values of units in the code and output layers.
  
     
   ```
-   (eg) python proposed.py MNIST
+    (eg) python proposed.py MNIST  MNIST_X_data_CV1.csv 4
   ```
-(eg) MNIST_total_loss.csv  
-     MNIST_code.csv 
+(eg) MNIST_loss_4.csv  
+     MNIST_code_4.csv 
      
 * Reconstructing input images
     To reconstruct input images, simply run recon.py with 
