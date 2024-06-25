@@ -42,7 +42,7 @@ copy the following Python and R scripts from its GitHub repository
   ```
        python load_data.py type
   ```
-  * type : datatype, select data set from MNIST, FMNIST, SHVN or CIFAR10
+  * type : data set, select data set from MNIST, FMNIST, SHVN or CIFAR10
   * output  : loading 10,000 data MNIST, FMNIST, SHVN and CIFAR10 data set and their labels 
     
   ```
