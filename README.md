@@ -11,9 +11,9 @@ We proposed a tied-weight autoencoder model as a dimensionality reduction model 
 * __Python__ : version 3.6 or later
 * __R__ : version 4 or later
 * __R-packages__: ggplot2, caret, e1071, nnet, dplyr, fastICA
-* __Python__: tensorflow (version 2.2 or later), keras, numpy, matplotlib, scikit-learn
+* __Python__: tensorflow (version 2.2 or later), keras, numpy, matplotlib, scikit-learn, opencv-python
 
-## Data sets
+### Data sets
 1. Data acquisition
     * MNIST :  in the installed tensorflow
     * FMNIST : in the installed tensorflow
@@ -23,17 +23,22 @@ We proposed a tied-weight autoencoder model as a dimensionality reduction model 
  
 
 ### Loading the scripts: 
-   copy the following Python and R scripts from its GitHub repository
-       * Python scripts 
-           * load_data.py  : loading data set, such as MNIST, Fashion-MNIST, SVHN and CIRAR10
-           * stacked.py : learning stacked autoencoder model
-           * proposed.py : learning proposed autoencoder model
-           * split.py : store loss function according to the class label
-           * recon.py : image reconstruction of each model
-       * R scripts
-           * pca.R : dimensionality redction with pricipal component analysis
-           * ica.R : dimensionality redction with independent componet analysis
-           * calculate.R : evaluating mean squared error according to the class label
-           * classification.R : performing classification analysis in terms of support vector machine
+copy the following Python and R scripts from its GitHub repository
+* Python scripts     
+    * load_data.py  : loading data set, such as MNIST, Fashion-MNIST, SVHN and CIRAR10    
+    * stacked.py : learning stacked autoencoder model    
+    * proposed.py : learning proposed autoencoder model    
+    * split.py : store loss function according to the class label    
+    * recon.py : image reconstruction of each model    
+* R scripts   
+    * pca.R : dimensionality redction with pricipal component analysis    
+    * ica.R : dimensionality redction with independent componet analysis    
+    * calculate.R : evaluating mean squared error according to the class label    
+    * classification.R : performing classification analysis in terms of support vector machine    
 
+### Scipts tutorial
+* Loading data sets    
+    To load data set, run load_data.py with following parameters.    
+       python load_data.py type    
+  * type : datatype, either "MNIST" for MNIST pr "FMNIST" for Fashion-MNIST
 
