@@ -1,4 +1,4 @@
-# tw_autoencoder: A tied-weight autoencoder for the linear dimensionality reduction of sample data with Python and R
+# A tied-weight autoencoder for the linear dimensionality reduction of sample data 
 
 Sunhee Kim, Chang-Yong Lee
 
