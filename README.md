@@ -25,16 +25,16 @@ We proposed a tied-weight autoencoder model as a dimensionality reduction model 
 ### Loading the scripts: 
 copy the following Python and R scripts from its GitHub repository
 * Python scripts     
-    * load_data.py  : loading data set, such as MNIST, Fashion-MNIST, SVHN and CIRAR10    
-    * stacked.py : learning stacked autoencoder model    
-    * proposed.py : learning proposed autoencoder model    
-    * split.py : store loss function according to the class label    
-    * recon.py : image reconstruction of each model    
+    * __load_data.py__  : loading data set, such as MNIST, Fashion-MNIST, SVHN and CIRAR10    
+    * __stacked.py__ : learning stacked autoencoder model    
+    * __proposed.py__ : learning proposed autoencoder model    
+    * __split.py__ : store loss function according to the class label    
+    * __recon.py__ : image reconstruction of each model    
 * R scripts   
-    * pca.R : dimensionality reduction with pricipal component analysis    
-    * ica.R : dimensionality reduction with independent componet analysis    
-    * loss.R : evaluating mean squared error according to the class label    
-    * classification.R : performing classification analysis in terms of support vector machine    
+    * __pca.R__ : dimensionality reduction with pricipal component analysis    
+    * __ica.R__ : dimensionality reduction with independent componet analysis    
+    * __loss.R__ : evaluating mean squared error according to the class label    
+    * __classification.R__ : performing classification analysis in terms of support vector machine    
 
 ### Scipts tutorial
 * Loading data sets    
