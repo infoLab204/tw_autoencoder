@@ -41,14 +41,14 @@ Copy the following Python and R scripts from its GitHub repository
   ```
     python load_data.py type
   ```
-  * type : data set, select data set from MNIST, FMNIST, SVHN or CIFAR10
-  * output  : result of storing MNIST, FMNIST, SHVN, or CIFAR10 datasets and their labels in 10,000 parts
+  * type : data set, select data set from MNIST, FMNIST, SVHN or CIFAR-10
+  * output  : result of storing MNIST, FMNIST, SHVN, or CIFAR-10 datasets and their labels in 10,000 parts
     
   ```
    (eg) python load_data.py MNIST
   ```
-(eg) MNIST_X_data_CV1~7.csv : data set of MNIST   
-     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MNIST_Y_label_CV1~7.csv : label of data set of MNIST
+(eg) MNIST_X_data_CV1.csv : data set of MNIST   
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MNIST_Y_label_CV1.csv : label of data set of MNIST
 
      
 * Learing autoencoder models
