@@ -14,12 +14,11 @@ We proposed a tied-weight autoencoder model as a dimensionality reduction model 
 * __Python__: tensorflow (version 2.2 or later), keras, numpy, matplotlib, scikit-learn, opencv-python
 
 ### Data sets
-1. Data acquisition
-    * MNIST :  in the installed tensorflow
-    * FMNIST : in the installed tensorflow
-    * CIRAR10: in the installed tensorflow
+1. Data acquisition : The dataset used are MNIST, Fashion-MNIST, SVHN and CIFAR-10. They are available on Keras and the following links:
+    * MNIST :  http://yann.lecun.com/exdb/mnist/
+    * FMNIST : https://github.com/zalandoresearch/fashion-mnist
+    * CIRAR-10: http://ufldl.stanford.edu/housenumbers/
     * SVHN : http://ufldl.stanford.edu/housenumbers/
-        * Format 2: Cropped Digits: train_32x32.mat, test_32x32.mat
  
 
 ### Loading the scripts: 
