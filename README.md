@@ -31,9 +31,9 @@ copy the following Python and R scripts from its GitHub repository
     * split.py : store loss function according to the class label    
     * recon.py : image reconstruction of each model    
 * R scripts   
-    * pca.R : dimensionality redction with pricipal component analysis    
-    * ica.R : dimensionality redction with independent componet analysis    
-    * calculate.R : evaluating mean squared error according to the class label    
+    * pca.R : dimensionality reduction with pricipal component analysis    
+    * ica.R : dimensionality reduction with independent componet analysis    
+    * loss.R : evaluating mean squared error according to the class label    
     * classification.R : performing classification analysis in terms of support vector machine    
 
 ### Scipts tutorial
@@ -43,14 +43,13 @@ copy the following Python and R scripts from its GitHub repository
        python load_data.py type
   ```
   * type : datatype, select data set from MNIST, FMNIST, SHVN or CIFAR10
-  * output  : MNIST, FMNIST, SHVN and CIFAR10 data set and their labels
- 
+  * output  : loading 10,000 data MNIST, FMNIST, SHVN and CIFAR10 data set and their labels 
     
   ```
    (eg) python load_data.py MNIST
   ```
-(eg) MNIST_X_data_CV1.csv : data set of MNIST   
-     MNIST_Y_label_CV1.csv : label of data set of MNIST
+(eg) MNIST_X_data.csv : data set of MNIST   
+     MNIST_Y_label.csv : label of data set of MNIST
 
      
 * Learing autoencoder models
