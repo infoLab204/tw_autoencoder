@@ -65,8 +65,8 @@ Copy the following Python and R scripts from its GitHub repository
   ```
     (eg) python proposed.py MNIST  MNIST_X_data_CV1.csv 4
   ```
-(eg) MNIST_loss_4.csv  
-     MNIST_code_4.csv 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(eg) MNIST_loss_4.csv  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MNIST_code_4.csv 
      
 * Reconstructing input images
     To reconstruct input images, simply run recon.py with 
