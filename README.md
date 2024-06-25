@@ -19,10 +19,21 @@ We proposed a tied-weight autoencoder model as a dimensionality reduction model 
     * FMNIST : in the installed tensorflow
     * CIRAR10: in the installed tensorflow
     * SVHN : http://ufldl.stanford.edu/housenumbers/
-    * Format 2: Cropped Digits: train_32x32.mat, test_32x32.mat
+        * Format 2: Cropped Digits: train_32x32.mat, test_32x32.mat
  
 
 ### Loading the scripts: 
-   copy the following Python module and R scripts from its GitHub repository
+   copy the following Python and R scripts from its GitHub repository
+       * Python scripts 
+           * load_data.py  : loading data set, such as MNIST, Fashion-MNIST, SVHN and CIRAR10
+           * stacked.py : learning stacked autoencoder model
+           * proposed.py : learning proposed autoencoder model
+           * split.py : store loss function according to the class label
+           * recon.py : image reconstruction of each model
+       * R scripts
+           * pca.R : dimensionality redction with pricipal component analysis
+           * ica.R : dimensionality redction with independent componet analysis
+           * calculate.R : evaluating mean squared error according to the class label
+           * classification.R : performing classification analysis in terms of support vector machine
 
 
