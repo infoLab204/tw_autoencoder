@@ -17,7 +17,7 @@ We proposed a tied-weight autoencoder model as a dimensionality reduction model 
 The dataset used are MNIST, Fashion-MNIST, SVHN and CIFAR-10. They are available on Keras and the following links.
 * MNIST :  http://yann.lecun.com/exdb/mnist/
 * FMNIST : https://github.com/zalandoresearch/fashion-mnist
-* CIRAR-10 : http://ufldl.stanford.edu/housenumbers/
+* CIRAR-10 :  https://www.cs.toronto.edu/~kriz/cifar.html
 * SVHN : http://ufldl.stanford.edu/housenumbers/
  
 
