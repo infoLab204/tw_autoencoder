@@ -159,7 +159,7 @@ Copy the following Python and R scripts from its GitHub repository
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(eg) MNIST_total_loss_4.csv     
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MNIST_total_class_loss_4.csv    
 
-* Performing classification analysis using support vector machine
+* Performing classification analysis using support vector machine    
     To classify data set, run classification.R with the codes of all models as the input data.
     Ouput will be the classification results
   ```
