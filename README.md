@@ -24,7 +24,7 @@ The dataset used are MNIST, Fashion-MNIST, SVHN and CIFAR-10. They are available
 ## Loading the scripts 
 Copy the following Python and R scripts from its GitHub repository
 * Python scripts     
-    * __load_data.py__  : loading data set, such as MNIST, Fashion-MNIST, SVHN and CIRAR10    
+    * __load_data.py__  : loading data set, such as MNIST, Fashion-MNIST, SVHN and CIRAR-10    
     * __stacked.py__ : learning stacked autoencoder model    
     * __tw_proposed.py__ : learning proposed autoencoder model    
     * __split.py__ : store function according to the class label    
