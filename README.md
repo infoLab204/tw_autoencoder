@@ -138,8 +138,8 @@ To reconstruct input images, simply run recon.py with MNIST, FMNIST, SVHN and CI
   ```
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(eg) MNIST_image_4_img20.png  
      
-### 7. Store loss function according to the class labels    
-To get loss function for each class, run split.py with data set and their class labels. Ouput will be loss functions of data set for each class label.    
+### 7. Store data set according to the class labels    
+To divide for each class, run split.py with data set and their class labels.      
 
   ```
     Usage : python split.py data_type X_data Y_label code
@@ -148,8 +148,7 @@ To get loss function for each class, run split.py with data set and their class 
   * X_data : data set
   * Y_label : label data set
   * code : number of nodes in the code layer
-  * output  : values of units in the output layer
- 
+  * output  :  divide for each class 
     
   ```
    (eg) python  split.py  MNIST MNIST_X_data_CV1.csv, MNIST_Y_label_CV1.csv 4
@@ -160,7 +159,7 @@ To get loss function for each class, run split.py with data set and their class 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MNIST_ICA_4_class0.csv for each class label   
 
 ### 8. Evaluating the loss function for the proposed model, SAE, PCA and ICA    
-To evaluate the loss function for all models, simply run loss.R with the values of units in the output lapyer of each model.    
+To evaluate the loss function for all models and each class, simply run loss.R with the values of units in the output lapyer of each model.    
 
   ```
     Usage : Rscipt loss.R type X_data code_size
