@@ -52,7 +52,8 @@ Copy the following Python and R scripts from its GitHub repository
 
      
 ### 2. Learning proposed autoencoder models    
-    To learn the proposed autoencoder models, run proposed.py with MNIST, FMNIST, SVHN and CIFAR-10 as input data sets. The scripts will evaluate the units in the code and output layer.     
+    To learn the proposed autoencoder models, run proposed.py with MNIST, FMNIST, SVHN and CIFAR-10 as input data sets. The scripts will evaluate the units in the code and output layer.    
+    
   ```
     Usage : python tw_proposed.py data_type input_data code_size
   ```
