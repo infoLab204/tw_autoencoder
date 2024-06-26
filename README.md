@@ -39,7 +39,7 @@ Copy the following Python and R scripts from its GitHub repository
 * Loading data set    
     To loading data set, run load_data.py with following parameters.
   ```
-    python load_data.py type
+    Using : python load_data.py type
   ```
   * type : data set, select data set from MNIST, FMNIST, SVHN or CIFAR-10
   * output  : result of storing MNIST, FMNIST, SHVN, or CIFAR-10 datasets and their labels in 10,000 parts
@@ -54,7 +54,7 @@ Copy the following Python and R scripts from its GitHub repository
 * Learning autoencoder models    
     To learn the autoencoder models, run stacked.py and proposed.py . The scripts will evaluate the units in the code and output layer.     
   ```
-    python tw_proposed.py type input code
+    Format : python tw_proposed.py type input code
   ```
   * type : data set, select data set from MNIST, FMNIST, SVHN or CIFAR-10
   * input : data set
@@ -73,7 +73,7 @@ Copy the following Python and R scripts from its GitHub repository
     To reduce the dimensionality with PCA, simply run PCA.R with MNIST, FMNIST, SVHN and CIFAR-10 as input data sets.   
     Output will be the dimensionality-reduced codes and output layer.
   ```
-    Rscipt pca.R type input_data_set code_size
+    Format : Rscipt pca.R type input_data_set code_size
   ```
   * type : datatype, select data set from MNIST, FMNIST, SVHN or CIFAR-10
   * input_data_set : input data set
@@ -91,7 +91,7 @@ Copy the following Python and R scripts from its GitHub repository
     To reduce the dimensionality with ICA, simply run PCA.R with MNIST, FMNIST, SVHN and CIFAR-10 as input data sets.    
     Output will be the dimensionality-reduced codes and output layer.
   ```
-       Rscipt ica.R type input_data_set code_size
+    Format : Rscipt ica.R type input_data_set code_size
   ```
   * type : datatype, select data set from MNIST, FMNIST, SVHN or CIFAR-10
   * input_data_set : input data set
@@ -124,7 +124,7 @@ Copy the following Python and R scripts from its GitHub repository
 * Store loss function according to the class labels    
     To get loss function for each class, run split.py with data set and their class labels. Ouput will be loss functions of data set for each class label.
   ```
-       python split.py type X_data Y_label code
+    Format : python split.py type X_data Y_label code
   ```
   * type : datatype, select data set from MNIST, FMNIST, SVHN or CIFAR-10
   * X_data : data set
@@ -145,7 +145,7 @@ Copy the following Python and R scripts from its GitHub repository
     To evaluate the loss function for all models, simply run loss.R with the values of units in the output lapyer of each model.    
     Ouput will be the loss function of all models.
   ```
-       Rscipt loss.R type X_data code_size
+    Format : Rscipt loss.R type X_data code_size
   ```
   * type : datatype, select data set from MNIST, FMNIST, SVHN or CIFAR-10
   * X_data : input data set
@@ -163,7 +163,7 @@ Copy the following Python and R scripts from its GitHub repository
     To classify data set, run classification.R with the codes of all models as the input data.
     Ouput will be the classification results
   ```
-       Rscipt classification.R type X_data, Y_label code_size
+    Format : Rscipt classification.R type X_data, Y_label code_size
   ```
   * type : datatype, select data set from MNIST, FMNIST, SVHN or CIFAR-10
   * X_data : data set
