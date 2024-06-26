@@ -37,7 +37,7 @@ Copy the following Python and R scripts from its GitHub repository
 
 ## Scipts tutorial
 ### 1. Loading data set    
-    To loading data set, run load_data.py with following parameters.
+To loading data set, run load_data.py with following parameters.
   ```
     Usage : python load_data.py data_type
   ```
@@ -52,7 +52,7 @@ Copy the following Python and R scripts from its GitHub repository
 
      
 ### 2. Learning proposed autoencoder models    
-    To learn the proposed autoencoder models, run proposed.py with MNIST, FMNIST, SVHN and CIFAR-10 as input data sets. The scripts will evaluate the units in the code and output layer.    
+To learn the proposed autoencoder models, run proposed.py with MNIST, FMNIST, SVHN and CIFAR-10 as input data sets. The scripts will evaluate the units in the code and output layer.    
     
   ```
     Usage : python tw_proposed.py data_type input_data code_size
@@ -69,7 +69,8 @@ Copy the following Python and R scripts from its GitHub repository
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MNIST_LAE_out_4.csv    
 
 ### 3. Learning stacked autoencoder models    
-    To learn the stacked autoencoder models, run stacked.py with MNIST, FMNIST, SVHN and CIFAR-10 as input data sets. The scripts will evaluate the units in the code and output layer.     
+To learn the stacked autoencoder models, run stacked.py with MNIST, FMNIST, SVHN and CIFAR-10 as input data sets. The scripts will evaluate the units in the code and output layer.     
+
   ```
     Usage : python stacked.py data_type input_data code_size
   ```
@@ -85,7 +86,7 @@ Copy the following Python and R scripts from its GitHub repository
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MNIST_SAE_out_4.csv    
 
 ### 4. Performing PCA for hte dimensionality reduction    
-    To reduce the dimensionality with PCA, simply run PCA.R with MNIST, FMNIST, SVHN and CIFAR-10 as input data sets.   
+To reduce the dimensionality with PCA, simply run PCA.R with MNIST, FMNIST, SVHN and CIFAR-10 as input data sets.   
     
   ```
     Usage : Rscipt pca.R type input_data code_size
@@ -103,8 +104,8 @@ Copy the following Python and R scripts from its GitHub repository
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MNIST_PCA_out_4.csv  
 
 ### 5. Performing ICA for hte dimensionality reduction     
-    To reduce the dimensionality with ICA, simply run PCA.R with MNIST, FMNIST, SVHN and CIFAR-10 as input data sets.    
-    Output will be the dimensionality-reduced codes and output layer.
+To reduce the dimensionality with ICA, simply run PCA.R with MNIST, FMNIST, SVHN and CIFAR-10 as input data sets.    
+
   ```
     Usage : Rscipt ica.R data_type input_data code_size
   ```
@@ -120,7 +121,8 @@ Copy the following Python and R scripts from its GitHub repository
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MNIST_ICA_out_4.csv  
 
 ### 6. Reconstructing input images    
-    To reconstruct input images, simply run recon.py with MNIST, FMNIST, SVHN and CIFAR-10 as input data sets.    
+To reconstruct input images, simply run recon.py with MNIST, FMNIST, SVHN and CIFAR-10 as input data sets.    
+
   ```
     Usage : python recon.py data_type X_data Y_label code_size img_idx
   ```
@@ -137,7 +139,8 @@ Copy the following Python and R scripts from its GitHub repository
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(eg) MNIST_image_4_img20.png  
      
 ### 7. Store loss function according to the class labels    
-    To get loss function for each class, run split.py with data set and their class labels. Ouput will be loss functions of data set for each class label.
+To get loss function for each class, run split.py with data set and their class labels. Ouput will be loss functions of data set for each class label.    
+
   ```
     Usage : python split.py data_type X_data Y_label code
   ```
@@ -157,7 +160,7 @@ Copy the following Python and R scripts from its GitHub repository
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MNIST_ICA_4_class0.csv for each class label   
 
 ### 8. Evaluating the loss function for the proposed model, SAE, PCA and ICA    
-    To evaluate the loss function for all models, simply run loss.R with the values of units in the output lapyer of each model.    
+To evaluate the loss function for all models, simply run loss.R with the values of units in the output lapyer of each model.    
 
   ```
     Usage : Rscipt loss.R type X_data code_size
@@ -174,8 +177,8 @@ Copy the following Python and R scripts from its GitHub repository
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MNIST_total_class_loss_4.csv : mean squred error of each class label        
 
 ### 9. Performing classification analysis using support vector machine    
-    To classify data set, run classification.R with the codes of all models as the input data.
-    Ouput will be the classification results
+To classify data set, run classification.R with the codes of all models as the input data.    
+
   ```
     Usage : Rscipt classification.R data_type X_data, Y_label code_size
   ```
