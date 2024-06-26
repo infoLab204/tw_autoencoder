@@ -11,7 +11,7 @@ We proposed a tied-weight autoencoder model as a dimensionality reduction model 
 * __Python__ : version 3.6 or later
 * __R__ : version 4 or later
 * __R-packages__: ggplot2, caret, e1071, nnet, dplyr, fastICA
-* __Python__: tensorflow (version 2.2 or later), keras, numpy, matplotlib, scikit-learn, opencv-python
+* __Python__: tensorflow (version 2.2 or later), keras, numpy, matplotlib, scikit-learn, scipy, opencv-python
 
 ## Data sets
 The dataset used are MNIST, Fashion-MNIST, SVHN and CIFAR-10. They are available on Keras and the following links.
