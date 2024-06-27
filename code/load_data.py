@@ -92,8 +92,8 @@ else :
         Y_train, Y_test=Y[train_index], Y[test_index]
         X_test= pd.DataFrame(X_test)
         Y_test= pd.DataFrame(Y_test)
-        X_test.to_csv(f"{data_type}_X_data_CV{cv}.csv",header=False, index=False)
-        Y_test.to_csv(f"{data_type}_Y_label_CV{cv}.csv", header=False, index=False)
+        X_test.to_csv(f"{data_type}_X_data_{cv}.csv",header=False, index=False)
+        Y_test.to_csv(f"{data_type}_Y_label_{cv}.csv", header=False, index=False)
         cv=cv+1
 
 ## End of load_data.py
