@@ -89,7 +89,7 @@ To learn the stacked autoencoder models, run stacked.py with MNIST, FMNIST, SVHN
 To reduce the dimensionality with PCA, simply run PCA.R with MNIST, FMNIST, SVHN and CIFAR-10 as input data sets.   
     
   ```
-    Usage : Rscipt pca.R type input_data code_size
+    Usage : Rscipt pca.R data_type input_data code_size
   ```
   * data_type : data type, select data set from MNIST, FMNIST, SVHN or CIFAR-10
   * input_data_set : input data set
