@@ -15,7 +15,7 @@ from scipy.io import loadmat
 
 from matplotlib import pyplot
 
-data_type=sys.argv[1]
+data_type=sys.argv[1]  ## select data type : MNIST, FMNIST, SVHN and CIFIR-10
 
 if data_type=="MNIST" :
     (X_train_full, Y_train_full), (X_test, Y_test) = mnist.load_data() 
@@ -48,7 +48,7 @@ if data_type=="SVHN" :
     Y=Y[:90000,:]
 
 
-if data_type=="CIFAR" or data_type=="SVHN" :
+if data_type=="CIFAR" or data_type=="SVHN" :  ## BGR to Grayscale, Grayscale to binary scale
     X_train_sel=np.zeros((1,1024))
     for i in range(X.shape[0]) :
         img_gray = cv2.cvtColor(X[i,:,:,:], cv2.COLOR_BGR2GRAY)
@@ -76,8 +76,8 @@ if data_type == "CIFAR" :
 elif data_type=="SVHN" :
     cv=1
     str_kf = StratifiedKFold(n_splits=9, shuffle=True, random_state=50)
-    for train_index, test_index in str_kf.split(X_train_sel,Y) :
-        X_train, X_test=X_train_sel[train_index], X_train_sel[test_index]
+    for train_index, test_index in str_kf.split(X,Y) :
+        X_train, X_test=X[train_index], X[test_index]
         Y_train, Y_test=Y[train_index], Y[test_index]
         X_test= pd.DataFrame(X_test)
         Y_test= pd.DataFrame(Y_test)
