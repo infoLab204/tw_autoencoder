@@ -63,7 +63,7 @@ To learn the proposed autoencoder models, run proposed.py with MNIST, FMNIST, SV
   * output  : values of units in the code and output layers.
      
   ```
-    (eg) python tw_proposed.py MNIST  MNIST_X_data_CV1.csv 4
+    (eg) python tw_proposed.py MNIST MNIST_X_data_1.csv 4
   ```
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(eg) MNIST_LAE_code_4.csv  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MNIST_LAE_out_4.csv    
@@ -80,7 +80,7 @@ To learn the stacked autoencoder models, run stacked.py with MNIST, FMNIST, SVHN
   * output  : values of units in the code and output layers.
      
   ```
-    (eg) python stacked.py MNIST  MNIST_X_data_CV1.csv 4
+    (eg) python stacked.py MNIST  MNIST_X_data_1.csv 4
   ```
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(eg) MNIST_SAE_code_4.csv  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MNIST_SAE_out_4.csv    
@@ -98,7 +98,7 @@ To reduce the dimensionality with PCA, simply run PCA.R with MNIST, FMNIST, SVHN
  
     
   ```
-   (eg) Rscipt pca.R MNIST MNIST_X_data_CV1.csv 4
+   (eg) Rscipt pca.R MNIST MNIST_X_data_1.csv 4
   ```
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(eg) MNIST_PCA_code_4.csv  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MNIST_PCA_out_4.csv  
@@ -115,7 +115,7 @@ To reduce the dimensionality with ICA, simply run PCA.R with MNIST, FMNIST, SVHN
   * output  : values of units in the  dimensionality-reduced codes and output layers
      
   ```
-   (eg) Rscipt ica.R MNIST MNIST_X_data_CV1.csv 4
+   (eg) Rscipt ica.R MNIST MNIST_X_data_1.csv 4
   ```
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(eg) MNIST_ICA_code_4.csv  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MNIST_ICA_out_4.csv  
@@ -134,7 +134,7 @@ To reconstruct input images, simply run recon.py with MNIST, FMNIST, SVHN and CI
   * output  : reconstructed images
      
   ```
-   (eg) python recon.py MNIST MNIST_X_data_cv1.csv MNIST_Y_label_CV1.csv 4 20
+   (eg) python recon.py MNIST MNIST_X_data_1.csv MNIST_Y_label_1.csv 4 20
   ```
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(eg) MNIST_image_4_img20.png  
      
@@ -148,10 +148,10 @@ To divide for each class, run split.py with data set and their class labels.
   * X_data : data set
   * Y_label : label data set
   * code : number of nodes in the code layer
-  * output  :  divide for each class 
+  * output  :  divided by each class   
     
   ```
-   (eg) python  split.py  MNIST MNIST_X_data_CV1.csv, MNIST_Y_label_CV1.csv 4
+   (eg) python  split.py  MNIST MNIST_X_data_1.csv, MNIST_Y_label_1.csv 4
   ```
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(eg) MNIST_LAE_4_class0.csv for each class label    
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MNIST_SAE_4_class0.csv for each class label    
