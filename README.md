@@ -2,10 +2,10 @@
 
 Sunhee Kim, Chang-Yong Lee
 
-tw_autoencoder represents Python and R scripts to assess the proposed auto-encoder model and to compare its performance with other models, such as stacked autoencoder (SAE), principal component analysis (PCA), and independent componet analysis(ICA) by using MNIST, Fashion-MNIST, SVHN and CIFAR-10 data sets.
 
-Dimensionality reduction is a method used in machine learning and data science to reduce the dimensions in a dataset. While linear methods are generally less effective at dimensionality reduction than nonlinear methods they can provide a linear relationship between the original data and the dimensionality-reduced representation, leading to better interpretability. 
-We proposed a tied-weight autoencoder model as a dimensionality reduction model with the merit of both linear and nonlinear methods. Although the tied-weight autoencoder is a nonlinear dimensionality reduction model, we approximate it to function as a linear model. The Python and R scripts provide the assessment of the proposed model and compare with other models in terms of the loss function, image reconstruction, and classification results. We provide Python and R scripts together in order for the readers to reproduce the results discussed in the manuscript.
+Dimensionality reduction is a method used in machine learning and data science to reduce the dimensions in a dataset. While linear methods are generally less effective at dimensionality reduction than nonlinear methods they can provide a linear relationship between the original data and the dimensionality-reduced representation, leading to better interpretability. We proposed a tied-weight autoencoder model as a dimensionality reduction model with the merit of both linear and nonlinear methods. Although the tied-weight autoencoder is a nonlinear dimensionality reduction model, we approximate it to function as a linear model.     
+
+tw_autoencoder represents Python and R scripts to assess the proposed auto-encoder model and to compare its performance with other models in terms of the loss function, image reconstruction, and classification results, such as stacked autoencoder (SAE), principal component analysis (PCA), and independent componet analysis(ICA) by using MNIST, Fashion-MNIST, SVHN and CIFAR-10 data sets. We provide Python and R scripts together in order for the readers to reproduce the results discussed in the manuscript.
 
 ## Install prerequisites
 * __Python__ : version 3.6 or later
