@@ -21,7 +21,7 @@ The dataset used are MNIST, Fashion-MNIST, SVHN and CIFAR10. They are available 
 * SVHN : http://ufldl.stanford.edu/housenumbers/
  
 
-## Loading the scripts : ###Copy the following Python and R scripts from its GitHub repository
+## Loading the scripts : Copy the following Python and R scripts from its GitHub repository
 * Python scripts     
     * __load_data.py__  : loading data set, such as MNIST, FMNIST, SVHN and CIFAR10        
     * __stacked.py__ : learning stacked autoencoder model       
