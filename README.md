@@ -169,7 +169,7 @@ To evaluate the loss function for all models and each class, simply run loss.R w
   * output  : mean squred error of all models and each class label
      
   ```
-   (eg) Rscipt loss.R MNIST MNIST_X_data_CV1.csv 4
+   (eg) Rscipt loss.R MNIST MNIST_X_data_1.csv 4
   ```
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(output) MNIST_total_loss_4.csv : mean squred error of all models      
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MNIST_total_class_loss_4.csv : mean squred error of each class label        
@@ -188,7 +188,7 @@ To perform classification analysis, run classification.R with code information a
  
     
   ```
-   (eg) Rscipt  classification.R MNIST MNIST_X_data_CV1.csv MNIST_Y_label_CV1.csv 4
+   (eg) Rscipt  classification.R MNIST MNIST_X_data_1.csv MNIST_Y_label_1.csv 4
   ```
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(output) MNIST_classification_4.csv 
  
