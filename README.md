@@ -46,8 +46,8 @@ To loading data set, run load_data.py with following parameters.
   ```
    (eg) python load_data.py MNIST
   ```
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(output) MNIST_X_data_1.csv : data set of MNIST   
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MNIST_Y_label_1.csv : label of data set of MNIST
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(output) MNIST_X_data_N.csv : data set of MNIST   
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MNIST_Y_label_N.csv : label of data set of MNIST
 
      
 ### 2. Learning proposed autoencoder models    
@@ -90,7 +90,7 @@ To reduce the dimensionality with PCA, simply run PCA.R with MNIST, FMNIST, SVHN
   ```
     Usage : Rscipt pca.R data_type input_data code_size
   ```
-  * data_type : data type, select data set from MNIST, FMNIST, SVHN or CIFAR-10
+  * data_type : data type, select data set from MNIST, FMNIST, SVHN or CIFAR10
   * input_data_set : input data set
   * code_size : number of nodes in the code layer
   * output  : values of units in the  dimensionality-reduced codes and output layers
@@ -125,7 +125,7 @@ To reconstruct input images, run recon.py with MNIST, FMNIST, SVHN and CIFAR10 a
   ```
     Usage : python recon.py data_type X_data Y_label code_size img_idx
   ```
-  * data_type : data type, select data set from MNIST, FMNIST, SVHN or CIFAR-10
+  * data_type : data type, select data set from MNIST, FMNIST, SVHN or CIFAR10
   * X_data : data set
   * Y_label : label data set
   * code_size : number of nodes in the code layer
@@ -143,7 +143,7 @@ To divide for each class, run split.py with data set and their class labels.
   ```
     Usage : python split.py data_type X_data Y_label code
   ```
-  * data_type : data type, select data set from MNIST, FMNIST, SVHN or CIFAR-10
+  * data_type : data type, select data set from MNIST, FMNIST, SVHN or CIFAR10
   * X_data : data set
   * Y_label : label data set
   * code : number of nodes in the code layer
@@ -152,10 +152,10 @@ To divide for each class, run split.py with data set and their class labels.
   ```
    (eg) python  split.py  MNIST MNIST_X_data_1.csv, MNIST_Y_label_1.csv 4
   ```
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(output) MNIST_LAE_4_class0.csv for each class label    
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MNIST_SAE_4_class0.csv for each class label    
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MNIST_PCA_4_class0.csv for each class label    
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MNIST_ICA_4_class0.csv for each class label   
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(output) MNIST_LAE_4_classN.csv for each class label    
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MNIST_SAE_4_classN.csv for each class label    
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MNIST_PCA_4_classN.csv for each class label    
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MNIST_ICA_4_classN.csv for each class label   
 
 ### 8. Evaluating the loss function for the proposed model, SAE, PCA and ICA    
 To evaluate the loss function for all models and each class, simply run loss.R with the values of units in the output layer of each model.         
@@ -180,7 +180,7 @@ To perform classification analysis, run classification.R with code information a
   ```
     Usage : Rscipt classification.R data_type X_data, Y_label code_size
   ```
-  * data_type : data type, select data set from MNIST, FMNIST, SVHN or CIFAR-10
+  * data_type : data type, select data set from MNIST, FMNIST, SVHN or CIFAR10
   * X_data : data set
   * Y_data : label data set
   * code : number of nodes in the code layer
