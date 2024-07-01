@@ -1,6 +1,6 @@
 # A tied-weight autoencoder for the linear dimensionality reduction of sample data 
 
-Sunhee Kim, Chang-Yong Lee
+Sunhee Kim and Chang-Yong Lee
 
 
 Dimensionality reduction is a method used in machine learning and data science to reduce the dimensions in a dataset. While linear methods are generally less effective at dimensionality reduction than nonlinear methods, they can provide a linear relationship between the original data and the dimensionality-reduced representation, leading to better interpretability. We proposed a tied-weight autoencoder model as a dimensionality reduction model with the advantages of both linear and nonlinear methods. Although the tied-weight autoencoder is a nonlinear dimensionality reduction model, we approximate it to function as a linear model.        
