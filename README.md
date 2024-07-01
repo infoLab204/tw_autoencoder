@@ -76,7 +76,7 @@ To learn the stacked autoencoder models, run stacked.py with MNIST, FMNIST, SVHN
   * data_type : data type, select data set from MNIST, FMNIST, SVHN or CIFAR10
   * input_data : input data set
   * code_size : number of nodes in the code layer
-  * output  : values of units in the code and output layers.
+  * output  : values of units in the code and output layers
      
   ```
     (eg) python stacked.py MNIST  MNIST_X_data_1.csv 4
