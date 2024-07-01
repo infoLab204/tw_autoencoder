@@ -5,7 +5,7 @@ Sunhee Kim, Chang-Yong Lee
 
 Dimensionality reduction is a method used in machine learning and data science to reduce the dimensions in a dataset. While linear methods are generally less effective at dimensionality reduction than nonlinear methods, they can provide a linear relationship between the original data and the dimensionality-reduced representation, leading to better interpretability. We proposed a tied-weight autoencoder model as a dimensionality reduction model with the merit of both linear and nonlinear methods. Although the tied-weight autoencoder is a nonlinear dimensionality reduction model, we approximate it to function as a linear model.     
 
-tw_autoencoder represents Python and R scripts to assess the proposed model and to compare its performance with other models such as stacked autoencoder(SAE), principal component analysis(PCA), and independent componet analysis(ICA) by using MNIST, Fashion-MNIST, SVHN and CIFAR-10 data sets. The Python and R scripts provide the assessment of the proposed model and compare with other models in terms of the loss function, image reconstruction, and classification results. We provide Python and R scripts together in order for the readers to reproduce the results discussed in the manuscript.
+tw_autoencoder represents Python and R scripts to assess the proposed model and to compare its performance with other models such as stacked autoencoder(SAE), principal component analysis(PCA), and independent component analysis(ICA) by using MNIST, Fashion-MNIST, SVHN and CIFAR-10 data sets. The Python and R scripts provide the assessment of the proposed model and compare with other models in terms of the loss function, image reconstruction, and classification results. We provide Python and R scripts together in order for the readers to reproduce the results discussed in the manuscript.
 
 ## Install prerequisites
 * __Python__ : version 3.6 or later
@@ -159,7 +159,7 @@ To divide for each class, run split.py with data set and their class labels.
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MNIST_ICA_4_class0.csv for each class label   
 
 ### 8. Evaluating the loss function for the proposed model, SAE, PCA and ICA    
-To evaluate the loss function for all models and each class, simply run loss.R with the values of units in the output lapyer of each model.    
+To evaluate the loss function for all models and each class, simply run loss.R with the values of units in the output layer of each model.    
 
   ```
     Usage : Rscipt loss.R type X_data code_size
@@ -185,7 +185,7 @@ To classify data set, run classification.R with the codes of all models as the i
   * X_data : data set
   * Y_data : label data set
   * code : number of nodes in the code layer
-  * output  : values of units in the output layer of each class label
+  * output  : values of evalutation metrics of each class label
  
     
   ```
