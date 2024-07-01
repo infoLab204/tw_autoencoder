@@ -17,7 +17,7 @@ The tw_autoencoder provides Python and R scripts to evaluate the proposed model 
 The dataset used are MNIST, Fashion-MNIST, SVHN and CIFAR10. They are available on Keras and the following links.
 * MNIST :  http://yann.lecun.com/exdb/mnist/
 * FMNIST : https://github.com/zalandoresearch/fashion-mnist
-* CIRAR-10 :  https://www.cs.toronto.edu/~kriz/cifar.html
+* CIRAR10 :  https://www.cs.toronto.edu/~kriz/cifar.html
 * SVHN : http://ufldl.stanford.edu/housenumbers/
  
 
