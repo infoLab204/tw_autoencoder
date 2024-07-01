@@ -46,8 +46,8 @@ To loading data set, run load_data.py with following parameters.
   ```
    (eg) python load_data.py MNIST
   ```
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(output) MNIST_X_data_1.csv : data set of MNIST   
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MNIST_Y_label_1.csv : label of data set of MNIST
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(output) MNIST_X_data_1.csv : data set of MNIST   
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MNIST_Y_label_1.csv : label of data set of MNIST
 
      
 ### 2. Learning proposed autoencoder models    
@@ -64,8 +64,8 @@ To learn the proposed autoencoder model, run tw_proposed.py with MNIST, FMNIST, 
   ```
     (eg) python tw_proposed.py MNIST MNIST_X_data_1.csv 4
   ```
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(output) MNIST_LAE_code_4.csv  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MNIST_LAE_out_4.csv    
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(output) MNIST_LAE_code_4.csv  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MNIST_LAE_out_4.csv    
 
 ### 3. Learning stacked autoencoder models    
 To learn the stacked autoencoder models, run stacked.py with MNIST, FMNIST, SVHN and CIFAR10 as input data sets. The scripts will evaluate the units in the code and output layer.        
@@ -81,8 +81,8 @@ To learn the stacked autoencoder models, run stacked.py with MNIST, FMNIST, SVHN
   ```
     (eg) python stacked.py MNIST  MNIST_X_data_1.csv 4
   ```
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(output) MNIST_SAE_code_4.csv  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MNIST_SAE_out_4.csv    
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(output) MNIST_SAE_code_4.csv  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MNIST_SAE_out_4.csv    
 
 ### 4. Performing PCA for hte dimensionality reduction    
 To reduce the dimensionality with PCA, simply run PCA.R with MNIST, FMNIST, SVHN and CIFAR10 as input data sets.   
@@ -99,8 +99,8 @@ To reduce the dimensionality with PCA, simply run PCA.R with MNIST, FMNIST, SVHN
   ```
    (eg) Rscipt pca.R MNIST MNIST_X_data_1.csv 4
   ```
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(output) MNIST_PCA_code_4.csv  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MNIST_PCA_out_4.csv  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(output) MNIST_PCA_code_4.csv  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MNIST_PCA_out_4.csv  
 
 ### 5. Performing ICA for hte dimensionality reduction     
 To reduce the dimensionality with ICA, simply run PCA.R with MNIST, FMNIST, SVHN and CIFAR10 as input data sets.   
@@ -116,8 +116,8 @@ To reduce the dimensionality with ICA, simply run PCA.R with MNIST, FMNIST, SVHN
   ```
    (eg) Rscipt ica.R MNIST MNIST_X_data_1.csv 4
   ```
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(output) MNIST_ICA_code_4.csv  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MNIST_ICA_out_4.csv  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(output) MNIST_ICA_code_4.csv  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MNIST_ICA_out_4.csv  
 
 ### 6. Reconstructing input images    
 To reconstruct input images, run recon.py with MNIST, FMNIST, SVHN and CIFAR10 as input data sets.       
@@ -135,7 +135,7 @@ To reconstruct input images, run recon.py with MNIST, FMNIST, SVHN and CIFAR10 a
   ```
    (eg) python recon.py MNIST MNIST_X_data_1.csv MNIST_Y_label_1.csv 4 20
   ```
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(output) MNIST_image_4_img20.png  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(output) MNIST_image_4_img20.png  
      
 ### 7. Store data set according to the class labels    
 To divide for each class, run split.py with data set and their class labels.         
@@ -152,10 +152,10 @@ To divide for each class, run split.py with data set and their class labels.
   ```
    (eg) python  split.py  MNIST MNIST_X_data_1.csv, MNIST_Y_label_1.csv 4
   ```
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(output) MNIST_LAE_4_class0.csv for each class label    
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MNIST_SAE_4_class0.csv for each class label    
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MNIST_PCA_4_class0.csv for each class label    
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MNIST_ICA_4_class0.csv for each class label   
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(output) MNIST_LAE_4_class0.csv for each class label    
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MNIST_SAE_4_class0.csv for each class label    
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MNIST_PCA_4_class0.csv for each class label    
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MNIST_ICA_4_class0.csv for each class label   
 
 ### 8. Evaluating the loss function for the proposed model, SAE, PCA and ICA    
 To evaluate the loss function for all models and each class, simply run loss.R with the values of units in the output layer of each model.         
@@ -171,8 +171,8 @@ To evaluate the loss function for all models and each class, simply run loss.R w
   ```
    (eg) Rscipt loss.R MNIST MNIST_X_data_CV1.csv 4
   ```
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(output) MNIST_total_loss_4.csv : mean squred error of all models      
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MNIST_total_class_loss_4.csv : mean squred error of each class label        
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(output) MNIST_total_loss_4.csv : mean squred error of all models      
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MNIST_total_class_loss_4.csv : mean squred error of each class label        
 
 ### 9. Performing classification analysis using support vector machine    
 To perform classification analysis, run classification.R with code information as the input data.     
@@ -190,5 +190,5 @@ To perform classification analysis, run classification.R with code information a
   ```
    (eg) Rscipt  classification.R MNIST MNIST_X_data_CV1.csv MNIST_Y_label_CV1.csv 4
   ```
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(output) MNIST_classification_4.csv 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(output) MNIST_classification_4.csv 
  
