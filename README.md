@@ -148,7 +148,7 @@ To divide for each class, run split.py with data set and their class labels.
   * X_data : data set
   * Y_label : label data set
   * code : number of nodes in the code layer
-  * output  :  divided by each class   
+  * output  :  data divided by each class   
     
   ```
    (eg) python  split.py  MNIST MNIST_X_data_1.csv, MNIST_Y_label_1.csv 4
