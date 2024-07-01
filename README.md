@@ -34,7 +34,7 @@ The dataset used are MNIST, Fashion-MNIST, SVHN and CIFAR10. They are available 
     * __loss.R__ : evaluating mean squared error according to the class label    
     * __classification.R__ : performing classification analysis in terms of support vector machine     
 
-## tutorial
+## Tutorial
 ### 1. Loading data set    
 To loading data set, run load_data.py with following parameters.
   ```
