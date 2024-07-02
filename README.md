@@ -11,10 +11,10 @@ The tw_autoencoder provides Python and R scripts to evaluate the proposed model 
 * __Python__ : version 3.6 or later
 * __R__ : version 4 or later
 * __R-packages__: ggplot2, caret, e1071, nnet, dplyr, fastICA
-* __Python__: tensorflow (version 2.2 or later), keras, numpy, matplotlib, scikit-learn, scipy, opencv-python
+* __Python-packages__: tensorflow (version 2.2 or later), keras, numpy, matplotlib, scikit-learn, scipy, opencv-python
 
 ## Data sets
-The dataset used are MNIST, Fashion-MNIST, SVHN and CIFAR10. They are available on Keras and the following links.
+The dataset used are MNIST, FMNIST, SVHN and CIFAR10. They are available on Keras and the following links.
 * MNIST :  http://yann.lecun.com/exdb/mnist/
 * FMNIST : https://github.com/zalandoresearch/fashion-mnist
 * CIRAR10 :  https://www.cs.toronto.edu/~kriz/cifar.html
