@@ -85,7 +85,7 @@ To learn the stacked autoencoder model, run stacked.py with MNIST, FMNIST, SVHN 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(output) MNIST_SAE_code_4.csv  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MNIST_SAE_out_4.csv    
 
-### 4. Performing PCA for hte dimensionality reduction    
+### 4. Performing PCA for the dimensionality reduction    
 To reduce the dimensionality with PCA, simply run PCA.R with MNIST, FMNIST, SVHN and CIFAR10 as input data sets.   
     
   ```
@@ -103,7 +103,7 @@ To reduce the dimensionality with PCA, simply run PCA.R with MNIST, FMNIST, SVHN
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(output) MNIST_PCA_code_4.csv  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MNIST_PCA_out_4.csv  
 
-### 5. Performing ICA for hte dimensionality reduction     
+### 5. Performing ICA for the dimensionality reduction     
 To reduce the dimensionality with ICA, simply run PCA.R with MNIST, FMNIST, SVHN and CIFAR10 as input data sets.   
 
   ```
