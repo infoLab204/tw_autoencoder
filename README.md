@@ -51,7 +51,7 @@ To loading data set, run load_data.py with following parameters.
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MNIST_Y_label_N.csv : label of data set of MNIST
 
      
-### 2. Learning proposed autoencoder models    
+### 2. Learning proposed autoencoder model    
 To learn the proposed autoencoder model, run tw_proposed.py with MNIST, FMNIST, SVHN and CIFAR10 as input datasets. The scripts will evaluate the units in the code and output layer.    
     
   ```
@@ -68,7 +68,7 @@ To learn the proposed autoencoder model, run tw_proposed.py with MNIST, FMNIST, 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(output) MNIST_LAE_code_4.csv  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MNIST_LAE_out_4.csv    
 
-### 3. Learning stacked autoencoder models    
+### 3. Learning stacked autoencoder model    
 To learn the stacked autoencoder models, run stacked.py with MNIST, FMNIST, SVHN and CIFAR10 as input data sets. The scripts will evaluate the units in the code and output layer.        
 
   ```
