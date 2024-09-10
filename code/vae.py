@@ -84,7 +84,7 @@ vae.fit(x_train, x_train, epochs=E, batch_size=BS)
 encoded_imgs = encoder.predict(x_train)[2]
 np.savetxt(f"{data_type}_VAE_code_{latent_dim}.csv",encoded_imgs, fmt='%.10f', delimiter=",")
 decoded_imgs = decoder.predict(encoded_imgs)
-np.savetxt(f"{data_type}_VAE_recon_{latent_dim}.csv",decoded_imgs, fmt='%.10f', delimiter=",")
+np.savetxt(f"{data_type}_VAE_out_{latent_dim}.csv",decoded_imgs, fmt='%.10f', delimiter=",")
 
 total_mse.write(f"{latent_dim}\t{mean_squared_error(x_train, decoded_imgs)}")
 total_mse.close()
