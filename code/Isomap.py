@@ -6,8 +6,8 @@ import sys
 
 data_type=sys.argv[1]  ## data type
 infile=sys.argv[2]   ## input file
-z_size=int(sys.argv[3]
-n_neigh=int(sys.argv[4])
+z_size=int(sys.argv[3]  ## components size
+n_neigh=int(sys.argv[4])  ## neighbors size
 
 
 train_x=np.loadtxt(f"{infile}", delimiter=",")
