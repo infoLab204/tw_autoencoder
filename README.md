@@ -73,24 +73,7 @@ To learn the proposed autoencoder model, run tw_proposed.py with MNIST, FMNIST, 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(output) MNIST_LAE_code_4.csv  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MNIST_LAE_out_4.csv    
 
-### 3. Learning stacked autoencoder model    
-To learn the stacked autoencoder model, run stacked.py with MNIST, FMNIST, SVHN, CIFAR10, Breast Cancer and Wine as input data sets. The scripts will evaluate the units in the code and output layer.        
-
-  ```
-    Usage : python stacked.py data_type input_data code_size
-  ```
-  * data_type : data type, select data set from MNIST, FMNIST, SVHN, CIFAR10, BC, or Wine
-  * input_data : input data set
-  * code_size : number of nodes in the code layer
-  * output  : values of units in the code and output layers
-     
-  ```
-    (eg) python stacked.py MNIST  MNIST_X_data_1.csv 4
-  ```
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(output) MNIST_SAE_code_4.csv  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MNIST_SAE_out_4.csv    
-
-### 4. Performing PCA for dimensionality reduction    
+### 3. Performing PCA for dimensionality reduction    
 To reduce the dimensionality with PCA, simply run PCA.R with MNIST, FMNIST, SVHN, CIFAR10, Breast Cancer and Wine as input data sets.   
     
   ```
@@ -108,7 +91,7 @@ To reduce the dimensionality with PCA, simply run PCA.R with MNIST, FMNIST, SVHN
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(output) MNIST_PCA_code_4.csv  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MNIST_PCA_out_4.csv  
 
-### 5. Performing ICA for dimensionality reduction     
+### 4. Performing ICA for dimensionality reduction     
 To reduce the dimensionality with ICA, simply run PCA.R with MNIST, FMNIST, SVHN , CIFAR10, Breast Cancer and Wine as input data sets.   
 
   ```
@@ -123,9 +106,77 @@ To reduce the dimensionality with ICA, simply run PCA.R with MNIST, FMNIST, SVHN
    (eg) Rscipt ica.R MNIST MNIST_X_data_1.csv 4
   ```
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(output) MNIST_ICA_code_4.csv  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MNIST_ICA_out_4.csv  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MNIST_ICA_out_4.csv    
 
-### 6. Reconstructing input images    
+### 5. Learning stacked autoencoder model    
+To learn the stacked autoencoder model, run stacked.py with MNIST, FMNIST, SVHN, CIFAR10, Breast Cancer and Wine as input data sets. The scripts will evaluate the units in the code and output layer.        
+
+  ```
+    Usage : python stacked.py data_type input_data code_size
+  ```
+  * data_type : data type, select data set from MNIST, FMNIST, SVHN, CIFAR10, BC, or Wine
+  * input_data : input data set
+  * code_size : number of nodes in the code layer
+  * output  : values of units in the code and output layers
+     
+  ```
+    (eg) python stacked.py MNIST  MNIST_X_data_1.csv 4
+  ```
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(output) MNIST_SAE_code_4.csv  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MNIST_SAE_out_4.csv    
+
+### 6. Learning variational autoencoder model    
+To learn the stacked autoencoder model, run stacked.py with MNIST, FMNIST, SVHN, CIFAR10, Breast Cancer and Wine as input data sets. The scripts will evaluate the units in the code and output layer.        
+
+  ```
+    Usage : python vae.py data_type input_data code_size
+  ```
+  * data_type : data type, select data set from MNIST, FMNIST, SVHN, CIFAR10, BC, or Wine
+  * input_data : input data set
+  * code_size : number of nodes in the code layer
+  * output  : values of units in the code and output layers
+     
+  ```
+    (eg) python vae.py MNIST  MNIST_X_data_1.csv 4
+  ```
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(output) MNIST_VAE_code_4.csv  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MNIST_VAE_out_4.csv    
+
+### 7. Performing LLE for dimensionality reduction     
+To reduce the dimensionality with ICA, simply run PCA.R with MNIST, FMNIST, SVHN , CIFAR10, Breast Cancer and Wine as input data sets.   
+
+  ```
+    Usage : python LLE.py data_type input_data code_size n_neighbor
+  ```
+  * data_type : data type, select data set from MNIST, FMNIST, SVHN , CIFAR10, BC, or Wine
+  * input_data : input data set
+  * code_size : number of nodes in the code layer
+  * n_neighbor : number of neighbor 
+  * output  : values of units in the  dimensionality-reduced codes
+     
+  ```
+   (eg) python LLE.py MNIST MNIST_X_data_1.csv 4
+  ```
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(output) MNIST_LLE_code_4.csv  
+
+### 8. Performing Isomap for dimensionality reduction     
+To reduce the dimensionality with ICA, simply run PCA.R with MNIST, FMNIST, SVHN , CIFAR10, Breast Cancer and Wine as input data sets.   
+
+  ```
+    Usage : python Isomap.py data_type input_data code_size n_neighbor
+  ```
+  * data_type : data type, select data set from MNIST, FMNIST, SVHN , CIFAR10, BC, or Wine
+  * input_data : input data set
+  * code_size : number of nodes in the code layer
+  * n_neighbor : number of neighbor 
+  * output  : values of units in the  dimensionality-reduced codes
+     
+  ```
+   (eg) python Isomap.py MNIST MNIST_X_data_1.csv 4
+  ```
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(output) MNIST_Isomap_code_4.csv 
+
+### 9. Reconstructing input images    
 To reconstruct input images, run recon.py with MNIST, FMNIST, SVHN, CIFAR10, Breast Cancer and Wine as input data sets.       
 
   ```
@@ -143,7 +194,7 @@ To reconstruct input images, run recon.py with MNIST, FMNIST, SVHN, CIFAR10, Bre
   ```
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(output) MNIST_image_4_img20.png  
      
-### 7. Store data set according to the class labels    
+### 10. Store data set according to the class labels    
 To divide for each class, run split.py with data set and their class labels.         
 
   ```
@@ -163,7 +214,7 @@ To divide for each class, run split.py with data set and their class labels.
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MNIST_PCA_4_classN.csv for each class label    
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MNIST_ICA_4_classN.csv for each class label   
 
-### 8. Evaluating the loss function for the proposed model, SAE, PCA and ICA    
+### 11. Evaluating the loss function for the proposed model, SAE, PCA and ICA    
 To evaluate the loss function for all models and each class, simply run loss.R with the values of units in the output layer of each model.         
 
   ```
@@ -180,7 +231,7 @@ To evaluate the loss function for all models and each class, simply run loss.R w
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(output) MNIST_total_loss_4.csv : mean squred error of all models      
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MNIST_total_class_loss_4.csv : mean squred error of each class label        
 
-### 9. Performing classification analysis using support vector machine    
+### 12. Performing classification analysis using support vector machine    
 To perform classification analysis, run classification.R with code information as the input data.     
 
   ```
