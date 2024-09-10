@@ -46,7 +46,7 @@ To loading data set, run load_data.py with following parameters.
   ```
     Usage : python load_data.py data_type
   ```
-  * data_type : data type, select data set from MNIST, FMNIST, SVHN or CIFAR10
+  * data_type : data type, select data set from MNIST, FMNIST, SVHN, CIFAR10, BC, or Wine
   * output  : result of storing MNIST, FMNIST, SHVN, or CIFAR-10 datasets and their labels in 10,000 parts
     
   ```
@@ -79,7 +79,7 @@ To learn the stacked autoencoder model, run stacked.py with MNIST, FMNIST, SVHN,
   ```
     Usage : python stacked.py data_type input_data code_size
   ```
-  * data_type : data type, select data set from MNIST, FMNIST, SVHN or CIFAR10
+  * data_type : data type, select data set from MNIST, FMNIST, SVHN, CIFAR10, BC, or Wine
   * input_data : input data set
   * code_size : number of nodes in the code layer
   * output  : values of units in the code and output layers
@@ -96,7 +96,7 @@ To reduce the dimensionality with PCA, simply run PCA.R with MNIST, FMNIST, SVHN
   ```
     Usage : Rscipt pca.R data_type input_data code_size
   ```
-  * data_type : data type, select data set from MNIST, FMNIST, SVHN or CIFAR10
+  * data_type : data type, select data set from MNIST, FMNIST, SVHN , CIFAR10, BC, or Wine
   * input_data_set : input data set
   * code_size : number of nodes in the code layer
   * output  : values of units in the  dimensionality-reduced codes and output layers
@@ -114,7 +114,7 @@ To reduce the dimensionality with ICA, simply run PCA.R with MNIST, FMNIST, SVHN
   ```
     Usage : Rscipt ica.R data_type input_data code_size
   ```
-  * data_type : data type, select data set from MNIST, FMNIST, SVHN or CIFAR10
+  * data_type : data type, select data set from MNIST, FMNIST, SVHN , CIFAR10, BC, or Wine
   * input_data : input data set
   * code_size : number of nodes in the code layer
   * output  : values of units in the  dimensionality-reduced codes and output layers
@@ -131,7 +131,7 @@ To reconstruct input images, run recon.py with MNIST, FMNIST, SVHN, CIFAR10, Bre
   ```
     Usage : python recon.py data_type X_data Y_label code_size img_idx
   ```
-  * data_type : data type, select data set from MNIST, FMNIST, SVHN or CIFAR10
+  * data_type : data type, select data set from MNIST, FMNIST, SVHN, CIFAR10, BC, or Wine
   * X_data : data set
   * Y_label : label data set
   * code_size : number of nodes in the code layer
@@ -149,7 +149,7 @@ To divide for each class, run split.py with data set and their class labels.
   ```
     Usage : python split.py data_type X_data Y_label code
   ```
-  * data_type : data type, select data set from MNIST, FMNIST, SVHN , CIFAR10, Breast Cancer or Wine
+  * data_type : data type, select data set from MNIST, FMNIST, SVHN , CIFAR10, BC or Wine
   * X_data : data set
   * Y_label : label data set
   * code : number of nodes in the code layer
@@ -169,7 +169,7 @@ To evaluate the loss function for all models and each class, simply run loss.R w
   ```
     Usage : Rscipt loss.R type X_data code_size
   ```
-  * data type : data type, select data set from MNIST, FMNIST, SVHN , CIFAR10, Breast Cancer or Wine
+  * data type : data type, select data set from MNIST, FMNIST, SVHN , CIFAR10, BC or Wine
   * X_data : input data set
   * code_size : number of nodes in the code layer
   * output  : mean squred error of all models and each class label
@@ -186,7 +186,7 @@ To perform classification analysis, run classification.R with code information a
   ```
     Usage : Rscipt classification.R data_type X_data, Y_label code_size
   ```
-  * data_type : data type, select data set from MNIST, FMNIST, SVHN , CIFAR10, Breast Cancer or Wine
+  * data_type : data type, select data set from MNIST, FMNIST, SVHN , CIFAR10, BC or Wine
   * X_data : data set
   * Y_data : label data set
   * code : number of nodes in the code layer
