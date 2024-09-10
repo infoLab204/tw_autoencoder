@@ -57,12 +57,12 @@ To loading data set, run load_data.py with following parameters.
 
      
 ### 2. Learning proposed autoencoder model    
-To learn the proposed autoencoder model, run tw_proposed.py with MNIST, FMNIST, SVHN and CIFAR10 as input datasets. The scripts will evaluate the units in the code and output layer.    
+To learn the proposed autoencoder model, run tw_proposed.py with MNIST, FMNIST, SVHN, CIFAR10, Breast Cancer and Wine as input datasets. The scripts will evaluate the units in the code and output layer.    
     
   ```
     Usage : python tw_proposed.py data_type input_data code_size
   ```
-  * data_type : data type, select data set from MNIST, FMNIST, SVHN or CIFAR10
+  * data_type : data type, select data set from MNIST, FMNIST, SVHN, CIFAR10, BC, or Wine
   * input_data : input data set
   * code_size : number of nodes in the code layer
   * output  : values of units in the code and output layers
@@ -74,7 +74,7 @@ To learn the proposed autoencoder model, run tw_proposed.py with MNIST, FMNIST, 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MNIST_LAE_out_4.csv    
 
 ### 3. Learning stacked autoencoder model    
-To learn the stacked autoencoder model, run stacked.py with MNIST, FMNIST, SVHN and CIFAR10 as input data sets. The scripts will evaluate the units in the code and output layer.        
+To learn the stacked autoencoder model, run stacked.py with MNIST, FMNIST, SVHN, CIFAR10, Breast Cancer and Wine as input data sets. The scripts will evaluate the units in the code and output layer.        
 
   ```
     Usage : python stacked.py data_type input_data code_size
@@ -91,7 +91,7 @@ To learn the stacked autoencoder model, run stacked.py with MNIST, FMNIST, SVHN 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MNIST_SAE_out_4.csv    
 
 ### 4. Performing PCA for dimensionality reduction    
-To reduce the dimensionality with PCA, simply run PCA.R with MNIST, FMNIST, SVHN and CIFAR10 as input data sets.   
+To reduce the dimensionality with PCA, simply run PCA.R with MNIST, FMNIST, SVHN, CIFAR10, Breast Cancer and Wine as input data sets.   
     
   ```
     Usage : Rscipt pca.R data_type input_data code_size
@@ -109,7 +109,7 @@ To reduce the dimensionality with PCA, simply run PCA.R with MNIST, FMNIST, SVHN
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MNIST_PCA_out_4.csv  
 
 ### 5. Performing ICA for dimensionality reduction     
-To reduce the dimensionality with ICA, simply run PCA.R with MNIST, FMNIST, SVHN and CIFAR10 as input data sets.   
+To reduce the dimensionality with ICA, simply run PCA.R with MNIST, FMNIST, SVHN , CIFAR10, Breast Cancer and Wine as input data sets.   
 
   ```
     Usage : Rscipt ica.R data_type input_data code_size
@@ -126,7 +126,7 @@ To reduce the dimensionality with ICA, simply run PCA.R with MNIST, FMNIST, SVHN
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MNIST_ICA_out_4.csv  
 
 ### 6. Reconstructing input images    
-To reconstruct input images, run recon.py with MNIST, FMNIST, SVHN and CIFAR10 as input data sets.       
+To reconstruct input images, run recon.py with MNIST, FMNIST, SVHN, CIFAR10, Breast Cancer and Wine as input data sets.       
 
   ```
     Usage : python recon.py data_type X_data Y_label code_size img_idx
@@ -149,7 +149,7 @@ To divide for each class, run split.py with data set and their class labels.
   ```
     Usage : python split.py data_type X_data Y_label code
   ```
-  * data_type : data type, select data set from MNIST, FMNIST, SVHN or CIFAR10
+  * data_type : data type, select data set from MNIST, FMNIST, SVHN , CIFAR10, Breast Cancer or Wine
   * X_data : data set
   * Y_label : label data set
   * code : number of nodes in the code layer
@@ -169,7 +169,7 @@ To evaluate the loss function for all models and each class, simply run loss.R w
   ```
     Usage : Rscipt loss.R type X_data code_size
   ```
-  * data type : data type, select data set from MNIST, FMNIST, SVHN or CIFAR10
+  * data type : data type, select data set from MNIST, FMNIST, SVHN , CIFAR10, Breast Cancer or Wine
   * X_data : input data set
   * code_size : number of nodes in the code layer
   * output  : mean squred error of all models and each class label
@@ -186,7 +186,7 @@ To perform classification analysis, run classification.R with code information a
   ```
     Usage : Rscipt classification.R data_type X_data, Y_label code_size
   ```
-  * data_type : data type, select data set from MNIST, FMNIST, SVHN or CIFAR10
+  * data_type : data type, select data set from MNIST, FMNIST, SVHN , CIFAR10, Breast Cancer or Wine
   * X_data : data set
   * Y_data : label data set
   * code : number of nodes in the code layer
