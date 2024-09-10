@@ -5,7 +5,7 @@ Sunhee Kim and Chang-Yong Lee
 
 Dimensionality reduction is a method used in machine learning and data science to reduce the dimensions in a dataset. While linear methods are generally less effective at dimensionality reduction than nonlinear methods, they can provide a linear relationship between the original data and the dimensionality-reduced representation, leading to better interpretability. We proposed a tied-weight autoencoder model as a dimensionality reduction model with the advantages of both linear and nonlinear methods. Although the tied-weight autoencoder is a nonlinear dimensionality reduction model, we approximate it to function as a linear model.        
 
-The tw_autoencoder provides Python and R scripts to evaluate the proposed model and compare its performance with other models such as Stacked Autoencoder (SAE), Principal Component Analysis (PCA), and Independent Component Analysis (ICA) using the MNIST, FMNIST, SVHN, and CIFAR10 datasets. The provided Python and R scripts produce the loss function, image reconstruction, and classification results. We provide the Python and R scripts together so that readers can reproduce the results discussed in the manuscript.   
+We demonstrate the effectiveness of our proposed model by comparing its performance with other linear and nonlinear models using widely known datasets. We compare the dimensionality reduction result of the proposed model with that of the linear models of PCA(Principal Component Analysis) and ICA(Independent Component Analysis), and the nonlinear models of stacked autoencoder (SAE), variational autoencoder(VAE), locally linear embeddings (LLE), and Isomap. The experimental datasets used are image datasets from MNIST, Fashion-MNIST(or FMNIST), SVHN, and CIFAR10 in addition to non-image datasets from the Breast Cancer and Wine datasets. The provided Python and R scripts produce the loss function, image reconstruction, and classification results. We provide the Python and R scripts together so that readers can reproduce the results discussed in the manuscript.   
 
 ## Install prerequisites
 * __Python__ : version 3.6 or later
@@ -19,6 +19,8 @@ The dataset used are MNIST, FMNIST, SVHN and CIFAR10. They are available on Kera
 * FMNIST : https://github.com/zalandoresearch/fashion-mnist
 * CIRAR10 :  https://www.cs.toronto.edu/~kriz/cifar.html
 * SVHN : http://ufldl.stanford.edu/housenumbers/
+* Breast Cancer : https://archive.ics.uci.edu/dataset/17/breast+cancer+wisconsin+diagnostic
+* Wine : https://archive.ics.uci.edu/dataset/109/wine
  
 
 ## Loading the scripts :     
