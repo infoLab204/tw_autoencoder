@@ -1,8 +1,8 @@
 argv <-commandArgs(trailingOnly=TRUE)
 
-data_type <- argv[1]  ## data_type : MNIST, FMNIST, HOUSE, CIFAR
-infileX <- argv[2]
-infileY <- argv[3]
+data_type <- argv[1]  ## data_type : MNIST, FMNIST, HOUSE, CIFAR, BC, or Wine
+infileX <- argv[2]   ## X data
+infileY <- argv[3]   ## Y data
 code <- argv[4]  ## CV number
 
 library(ggplot2)
@@ -17,7 +17,7 @@ x_data <- as.matrix(X_data)
 Y_label <- read.csv(infileY, header = F)
 y_label <- Y_label[, 1]
 
-model_list <- c("LAE", "SAE", "PCA", "ICA")
+model_list <- c("LAE", "SAE", "PCA", "ICA","LLE","Isomap","VAE")
 
 kf <- 5
 idx <- createFolds(factor(y_label), k = kf)
@@ -32,9 +32,11 @@ LAE_data <- read.csv(paste0(data_type,"_LAE_z_", code, ".csv"), header = F)
 SAE_data <- read.csv(paste0(data_type, "_SAE_z_", code, ".csv"), header = F)
 PCA_data <- read.csv(paste0(data_type, "_PCA_z_", code, ".csv"), header = F)
 ICA_data <- read.csv(paste0(data_type, "_ICA_z_", code, ".csv"), header = F)
- 
+VAE_data <- read.csv(paste0(data_type, "_VAE_z_", code, ".csv"), header = F)
+LLE_data <- read.csv(paste0(data_type, "_LLE_z_", code, ".csv"), header = F)
+Isomap_data <- read.csv(paste0(data_type, "_Isomap_z_", code, ".csv"), header = F)
   
-data_list <- list(LAE_data, SAE_data, PCA_data, ICA_data)
+data_list <- list(LAE_data, SAE_data, PCA_data, ICA_data, VAE_data, LLE_data, Isomap_data)
   
 comp_value <- ncol(LAE_data)
   
@@ -107,22 +109,53 @@ for(data_index in 1:length(data_list)){
       
       test_actual <- as.factor(test_actual)
       test_predict <- as.factor(test_predict)
-      
-      levels(test_actual) <- 0:9
-      levels(test_predict) <- 0:9
-      
+
+      if data_type=="BC" :
+          levels(test_actual) <- 0:1
+          levels(test_predict) <- 0:1
+      elif data_type=="Wine" :
+          levels(test_actual) <- 0:2
+          levels(test_predict) <- 0:2
+      else :
+          levels(test_actual) <- 0:9
+          levels(test_predict) <- 0:9
+     
       test_confu_mat <- confusionMatrix(test_predict, test_actual)$byClass
-      
-      for(ind in 0:9){
-        bacc_value <- test_confu_mat[ind+1, "Balanced Accuracy"]
-        F1_value <- test_confu_mat[ind+1, "F1"]
+
+      if data_type=="BC":
+          for(ind in 0:1){
+             bacc_value <- test_confu_mat[ind+1, "Balanced Accuracy"]
+             F1_value <- test_confu_mat[ind+1, "F1"]
         
-        classifi_data <- data.frame(classifi_method = classifi_method,
+             classifi_data <- data.frame(classifi_method = classifi_method,
                                     model_type = model_type, fold_num = i, class_num = ind,
                                     bacc = bacc_value, F1=F1_value)
         
-        total_classifi_data <- rbind(total_classifi_data, classifi_data)
-      }
+             total_classifi_data <- rbind(total_classifi_data, classifi_data)
+          }
+      elif data_type=="Wine":
+          for(ind in 0:2){
+              bacc_value <- test_confu_mat[ind+1, "Balanced Accuracy"]
+              F1_value <- test_confu_mat[ind+1, "F1"]
+        
+              classifi_data <- data.frame(classifi_method = classifi_method,
+                                    model_type = model_type, fold_num = i, class_num = ind,
+                                    bacc = bacc_value, F1=F1_value)
+        
+              total_classifi_data <- rbind(total_classifi_data, classifi_data)
+           }
+      else :
+           for(ind in 0:9){
+              bacc_value <- test_confu_mat[ind+1, "Balanced Accuracy"]
+              F1_value <- test_confu_mat[ind+1, "F1"]
+        
+              classifi_data <- data.frame(classifi_method = classifi_method,
+                                    model_type = model_type, fold_num = i, class_num = ind,
+                                    bacc = bacc_value, F1=F1_value)
+        
+              total_classifi_data <- rbind(total_classifi_data, classifi_data)
+           }     
+     
     }
     
     End_Time <- Sys.time()
