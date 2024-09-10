@@ -3,7 +3,7 @@ argv <-commandArgs(trailingOnly=TRUE)
 data_type <- argv[1]  ## data_type : MNIST, FMNIST, HOUSE, CIFAR, BC, or Wine
 infileX <- argv[2]   ## X data
 infileY <- argv[3]   ## Y data
-code <- argv[4]  ## CV number
+code <- argv[4]  ## code size
 
 library(ggplot2)
 library(dplyr)
