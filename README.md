@@ -177,12 +177,12 @@ To reduce the dimensionality with ICA, simply run PCA.R with MNIST, FMNIST, SVHN
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(output) MNIST_Isomap_code_4.csv 
 
 ### 9. Reconstructing input images    
-To reconstruct input images, run recon.py with MNIST, FMNIST, SVHN, CIFAR10, Breast Cancer and Wine as input data sets.       
+To reconstruct input images, run recon.py with MNIST, FMNIST, SVHN, and CIFAR10 as input data sets.       
 
   ```
     Usage : python recon.py data_type X_data Y_label code_size img_idx
   ```
-  * data_type : data type, select data set from MNIST, FMNIST, SVHN, CIFAR10, BC, or Wine
+  * data_type : data type, select data set from MNIST, FMNIST, SVHN, or CIFAR10
   * X_data : data set
   * Y_label : label data set
   * code_size : number of nodes in the code layer
@@ -214,13 +214,13 @@ To divide for each class, run split.py with data set and their class labels.
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MNIST_PCA_4_classN.csv for each class label    
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MNIST_ICA_4_classN.csv for each class label   
 
-### 11. Evaluating the loss function for the proposed model, SAE, PCA and ICA    
+### 11. Evaluating the loss function for the proposed model, SAE, PCA, ICA and VAE    
 To evaluate the loss function for all models and each class, simply run loss.R with the values of units in the output layer of each model.         
 
   ```
     Usage : Rscipt loss.R type X_data code_size
   ```
-  * data type : data type, select data set from MNIST, FMNIST, SVHN , CIFAR10, BC or Wine
+  * data type : data type, select data set from MNIST, FMNIST, SVHN, or CIFAR10
   * X_data : input data set
   * code_size : number of nodes in the code layer
   * output  : mean squred error of all models and each class label
