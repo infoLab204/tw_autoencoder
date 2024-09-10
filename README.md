@@ -92,7 +92,7 @@ To reduce the dimensionality with PCA, simply run PCA.R with MNIST, FMNIST, SVHN
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MNIST_PCA_out_4.csv  
 
 ### 4. Performing ICA for dimensionality reduction     
-To reduce the dimensionality with ICA, simply run PCA.R with MNIST, FMNIST, SVHN , CIFAR10, Breast Cancer and Wine as input data sets.   
+To reduce the dimensionality with ICA, simply run ICA.R with MNIST, FMNIST, SVHN , CIFAR10, Breast Cancer and Wine as input data sets.   
 
   ```
     Usage : Rscipt ica.R data_type input_data code_size
@@ -143,7 +143,7 @@ To learn the stacked autoencoder model, run stacked.py with MNIST, FMNIST, SVHN,
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MNIST_VAE_out_4.csv    
 
 ### 7. Performing LLE for dimensionality reduction     
-To reduce the dimensionality with ICA, simply run PCA.R with MNIST, FMNIST, SVHN , CIFAR10, Breast Cancer and Wine as input data sets.   
+To reduce the dimensionality with LLE, simply run LLE.py with MNIST, FMNIST, SVHN , CIFAR10, Breast Cancer and Wine as input data sets.   
 
   ```
     Usage : python LLE.py data_type input_data code_size n_neighbor
@@ -160,7 +160,7 @@ To reduce the dimensionality with ICA, simply run PCA.R with MNIST, FMNIST, SVHN
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(output) MNIST_LLE_code_4.csv  
 
 ### 8. Performing Isomap for dimensionality reduction     
-To reduce the dimensionality with ICA, simply run PCA.R with MNIST, FMNIST, SVHN , CIFAR10, Breast Cancer and Wine as input data sets.   
+To reduce the dimensionality with Isomap, simply run Isomap.py with MNIST, FMNIST, SVHN , CIFAR10, Breast Cancer and Wine as input data sets.   
 
   ```
     Usage : python Isomap.py data_type input_data code_size n_neighbor
