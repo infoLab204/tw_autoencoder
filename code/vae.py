@@ -17,7 +17,7 @@ if data_type=="MNIST" or data_type=="FMNIST":
     intermediate_dim = 128
     E=200
     BS=100
-elif data_type=="CIFAR" or data_type=="HOUSE" :
+elif data_type=="CIFAR" or data_type=="SVHN" :
     original_dim = 32 * 32
     intermediate_dim = 256
     E=200
