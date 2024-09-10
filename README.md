@@ -14,7 +14,7 @@ We demonstrate the effectiveness of our proposed model by comparing its performa
 * __Python-packages__: tensorflow (version 2.2 or later), keras, numpy, matplotlib, scikit-learn, scipy, opencv-python
 
 ## Data sets
-The dataset used are MNIST, FMNIST, SVHN and CIFAR10. They are available on Keras and the following links.
+The dataset used are available on Keras and the following links.
 * MNIST :  http://yann.lecun.com/exdb/mnist/
 * FMNIST : https://github.com/zalandoresearch/fashion-mnist
 * CIRAR10 :  https://www.cs.toronto.edu/~kriz/cifar.html
@@ -30,7 +30,10 @@ Copy the following Python and R scripts from its GitHub repository
     * __stacked.py__ : learning stacked autoencoder model       
     * __tw_proposed.py__ : learning proposed autoencoder model    
     * __split.py__ : store function according to the class label
-    * __recon.py__ : image reconstruction of each model       
+    * __recon.py__ : image reconstruction of each model
+    * __vae.py__ : learning variational autoencoder mode1
+    * __LLE.py__ : dimensionality reduction with locally linear embeddings
+    * __Isomap.py__ : dimensionality reduction with Isomap
 * R scripts   
     * __pca.R__ : dimensionality reduction with pricipal component analysis          
     * __ica.R__ : dimensionality reduction with independent componet analysis   
