@@ -32,6 +32,7 @@ LAE_recon_loss <- c()
 ICA_recon_loss <- c()
 SAE_recon_loss <- c()
 PCA_recon_loss <- c()
+VAE_recon_loss <- c()
   
 for(i in 1:nrow(PCA_recon)){
     LAE_recon_loss[i] <- mean((X_data[i, ] - LAE_recon[i, ])^2)
