@@ -66,7 +66,8 @@ decoder = keras.Model(latent_inputs, outputs, name='decoder')
 outputs = decoder(encoder(inputs)[2])
 vae = keras.Model(inputs, outputs, name='vae_mlp')
 
-reconstruction_loss =  keras.losses.binary_crossentropy(inputs, outputs)
+#reconstruction_loss =  keras.losses.binary_crossentropy(inputs, outputs)
+reconstruction_loss =  keras.losses.MSE(inputs, outputs)
 reconstruction_loss *= original_dim
 kl_loss = 1 + z_log_sigma - K.square(z_mean) - K.exp(z_log_sigma)
 kl_loss = K.sum(kl_loss, axis=-1)
